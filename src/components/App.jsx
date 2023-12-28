@@ -80,7 +80,7 @@ class App extends Component {
       <>
         <ContactForm addNewContact={this.addNewContact} />
         <Filter value={filter} onChange={this.changeFilter} />
-        {this.state.contacts.length > 1 && (
+        {this.state.contacts.length > 0 && (
           <ContactsList
             contacts={shownContacts}
             handleDelete={this.onRemoveContact}
